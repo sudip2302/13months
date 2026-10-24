@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>169 Reasons Why You | Our Little Universe</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .why-page {
+            width: min(1180px, 92%);
+            margin: auto;
+            padding: 65px 0 80px;
+        }
+
+        .why-heading {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 45px;
+        }
+
+        .why-heading .eyebrow {
+            color: #bd8998;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .why-heading h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(36px, 6vw, 58px);
+            font-weight: 400;
+            color: #65505a;
+            margin: 18px 0;
+        }
+
+        .why-heading p {
+            color: #8d7b82;
+            line-height: 1.9;
+            font-size: 16px;
+        }
+
+        .why-count {
+            text-align: center;
+            color: #b58a98;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
+
+        .reason-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .reason-card {
+            position: relative;
+            min-height: 155px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid #eedce1;
+            border-radius: 19px;
+            box-shadow: 0 5px 22px rgba(123, 83, 99, 0.06);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(15px);
+            animation: cardAppear 0.55s ease forwards;
+            animation-delay: var(--delay);
+            transition: transform 0.3s ease, box-shadow 0.3s ease,
+                        border-color 0.3s ease;
+        }
+
+        .reason-card:hover {
+            transform: translateY(-6px);
+            border-color: #d9aab8;
+            box-shadow: 0 13px 30px rgba(123, 83, 99, 0.13);
+        }
+
+        .reason-number {
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: #c28e9e;
+        }
+
+        .reason-text {
+            font-family: Georgia, serif;
+            font-size: 17px;
+            line-height: 1.65;
+            color: #65515a;
+        }
+
+        .reason-heart {
+            position: absolute;
+            right: 17px;
+            top: 13px;
+            color: #e4c4ce;
+            font-size: 19px;
+        }
+
+        .why-ending {
+            text-align: center;
+            margin: 85px auto 15px;
+            padding: 55px 20px;
+            background: rgba(255,255,255,0.48);
+            border: 1px solid #eedce1;
+            border-radius: 25px;
+        }
+
+        .why-ending .script-note {
+            color: #b98796;
+            font-size: 22px;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .why-ending h2 {
+            font-family: Georgia, serif;
+            font-size: clamp(28px, 5vw, 43px);
+            font-weight: 400;
+            color: #765966;
+        }
+
+        .why-ending p {
+            color: #927f86;
+            line-height: 1.8;
+        }
+
+        .why-ending a {
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .reason-error {
+            text-align: center;
+            color: #a45d6e;
+            padding: 30px;
+            grid-column: 1 / -1;
+        }
+
+        @keyframes cardAppear {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 850px) {
+            .reason-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 550px) {
+            .why-page {
+                padding-top: 45px;
+            }
+
+            .reason-grid {
+                grid-template-columns: 1fr;
+                gap: 13px;
+            }
+
+            .reason-card {
+                min-height: 115px;
+                padding: 23px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reason-card {
+                animation: none;
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="universe-petals" aria-hidden="true">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+</div>
+
+<nav class="site-nav">
+    <a class="brand" href="index.html">Our Little Universe ♡</a>
+
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="why.html">Why You</a>
+        <a href="chapters.html">Our Story</a>
+        <a href="little-things.html">Little Things</a>
+        <a href="letter.html">Letter</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="game.html">Arcade</a>
+        <a href="surprise.html">Surprise</a>
+    </div>
+</nav>
+
+<main class="why-page">
+
+    <header class="why-heading">
+        <div class="eyebrow">A list that could go on forever</div>
+
+        <h1>169 Reasons Why You ♡</h1>
+
+        <p>
+            Your eyes, your smile, your little habits,
+            your heart, your ridiculously cute expressions.
+            Here are 169 little reasons why you're my favourite person.
+        </p>
+    </header>
+
+    <div class="why-count" id="reasonCount">
+        169 LITTLE REASONS · ONE FAVOURITE PERSON
+    </div>
+
+    <section class="reason-grid" id="reasonsGrid"></section>
+
+    <section class="why-ending">
+        <div class="script-note">And the biggest reason?</div>
+
+        <h2>Because you're you. ♡</h2>
+
+        <p>
+            There isn't a perfect list for a person
+            who means this much.
+        </p>
+
+        <a class="button" href="letter.html">A letter for you</a>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    169 reasons. A million more to discover. ♡
+</footer>
+
+<script src="content.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Mobile navigation
+    const menuButton = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (menuButton && navLinks) {
+        menuButton.addEventListener("click", function () {
+            navLinks.classList.toggle("open");
+        });
+    }
+
+    // Render all reasons
+    const grid = document.getElementById("reasonsGrid");
+    const count = document.getElementById("reasonCount");
+
+    if (
+        typeof OUR_STORY === "undefined" ||
+        !Array.isArray(OUR_STORY.reasons)
+    ) {
+        grid.innerHTML =
+            '<p class="reason-error">Could not load the reasons. Please check content.js.</p>';
+        return;
+    }
+
+    const reasons = OUR_STORY.reasons;
+
+    count.textContent =
+        reasons.length + " LITTLE REASONS · ONE FAVOURITE PERSON";
+
+    grid.innerHTML = "";
+
+    reasons.forEach(function (reason, index) {
+
+        const card = document.createElement("article");
+        card.className = "reason-card";
+
+        card.style.setProperty(
+            "--delay",
+            Math.min(index % 12, 11) * 0.045 + "s"
+        );
+
+        const number = document.createElement("div");
+        number.className = "reason-number";
+        number.textContent =
+            "REASON " + String(index + 1).padStart(3, "0");
+
+        const text = document.createElement("div");
+        text.className = "reason-text";
+        text.textContent = reason;
+
+        const heart = document.createElement("span");
+        heart.className = "reason-heart";
+        heart.textContent = "♡";
+        heart.setAttribute("aria-hidden", "true");
+
+        card.appendChild(number);
+        card.appendChild(text);
+        card.appendChild(heart);
+
+        grid.appendChild(card);
+    });
+
+    console.log("Successfully loaded " + reasons.length + " reasons.");
+
+});
+</script>
+
+</body>
+</html>
